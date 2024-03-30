@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+input[type="text"]:focus ~ .input-text,
+input[type="text"]:not(:placeholder-shown) ~ .input-text {
+  @apply text-white text-2xl transform -translate-y-4 -translate-x-2 scale-50;
+}
+
+input[type="date"]:focus ~ .input-text,
+input[type="date"]:not(:placeholder-shown) ~ .input-text {
+  @apply text-white text-2xl transform -translate-y-4 -translate-x-2 scale-50;
+}
+
+textarea[type="text"]:focus ~ .input-text,
+textarea[type="text"]:not(:placeholder-shown) ~ .input-text {
+  @apply text-white text-2xl transform -translate-y-4 -translate-x-2 scale-50;
+}
